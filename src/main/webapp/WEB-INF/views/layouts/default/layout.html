@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>layout</title>
+</head>
+<body>
+layout
+<!— 템플릿 지정 —>
+<#include TPL>
+
+<#--주석 달기--> 
+<#list  1..10  as i > 
+      ${i}
+   <#assign i=i+1?int>
+</#list>
+<br>----------------
+<#assign size=19>
+ ${size}
+ </body>
+</html>
